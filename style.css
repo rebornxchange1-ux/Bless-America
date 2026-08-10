@@ -365,24 +365,26 @@ button { font-family: inherit; }
 .hero-video-wrap {
   margin-top: 32px;
   width: 100%;
-  max-width: 480px;
+  max-width: 900px;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  background: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  background: #000;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
 }
 
 .hero-video {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 70vh;
   object-fit: contain;
   background: #000;
 }
 
 @media (max-width: 600px) {
-  .hero-video-wrap { max-width: 100%; }
+  .hero-video-wrap { max-width: 100%; border-radius: 0; border-left: none; border-right: none; }
+  .hero-video { max-height: 50vh; }
 }
 
 /* ==========================================================
