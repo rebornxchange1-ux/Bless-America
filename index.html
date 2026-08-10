@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bless America | $BLESS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-container">
+
+    <a href="#hero" class="nav-brand">
+      <img src="logo.png" alt="$BLESS" class="nav-logo-img">
+      <span class="nav-brand-text">Bless America</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#token">Token</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#community">Community</a>
+    </nav>
+
+    <div class="nav-socials">
+      <a href="https://x.com/bless_america1" target="_blank" rel="noopener" aria-label="X (Twitter)" class="nav-social-icon">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://t.me/bless_america1" target="_blank" rel="noopener" aria-label="Telegram" class="nav-social-icon">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21.5 4.5 2.75 11.9c-1.2.48-1.19 1.14-.22 1.44l4.8 1.5 1.85 5.7c.23.55.42.77.86.77.44 0 .63-.2.86-.44l2.06-2 4.28 3.16c.79.44 1.36.21 1.56-.73l2.82-13.3c.3-1.15-.44-1.67-1.17-1.5z"/></svg>
+      </a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#about">About</a>
+    <a href="#token">Token</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#community">Community</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="home.png" alt="American Flag" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+
+      <div class="hero-logo-wrap reveal">
+        <img src="logo.png" alt="$BLESS Logo" class="hero-logo-spin">
+      </div>
+
+      <h1 class="hero-title reveal">Bless America</h1>
+      <p class="hero-symbol reveal">$BLESS &nbsp;&middot;&nbsp; BNB Chain</p>
+
+      <p class="hero-tagline reveal">
+        A Token of Faith. A Future of Blessings.
+      </p>
+
+      <div class="hero-ca reveal">
+        <span class="hero-ca-label">Contract Address</span>
+        <div class="hero-ca-row">
+          <span class="hero-ca-value" id="caValue">0xc52e3b77821406A04D8B2294E77E29270b940637</span>
+          <button type="button" id="copyCaBtn" class="hero-ca-copy" aria-label="Copy contract address">Copy</button>
+        </div>
+      </div>
+
+      <div class="hero-buttons reveal">
+        <a href="https://dexscreener.com/bsc/0xA61DDb5D7B4aB2F172F08eE7B85A9DC25296fB83" target="_blank" rel="noopener" class="btn-primary">Buy $BLESS</a>
+        <a href="https://t.me/bless_america1" target="_blank" rel="noopener" class="btn-outline">Join Telegram</a>
+        <a href="https://x.com/bless_america1" target="_blank" rel="noopener" class="btn-outline">Follow X</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <span class="eyebrow">The Story</span>
+      <h2 class="reveal">Who Is Bless America</h2>
+      <p class="reveal">
+        BLESS is a meme token created on the BNB Chain on July 4th,
+        2021, and has since been CTO'd (community takeover) by an
+        amazing community who carry it forward together.
+      </p>
+      <p class="reveal">
+        Born on Independence Day and carried by faith, community,
+        and a shared belief in something bigger than the charts,
+        Bless America stands for pride, unity, and blessings for
+        everyone who holds it.
+      </p>
+      <p class="hero-tagline-repeat reveal">God Bless America.</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
