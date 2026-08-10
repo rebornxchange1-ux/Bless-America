@@ -45,24 +45,28 @@ function initScrollReveal() {
 }
 
 /* ----------------------------------------------------------
-   Copy contract address to clipboard
+   Copy contract address to clipboard (works for any button
+   with the .hero-ca-copy class, paired with the address text
+   in its sibling .hero-ca-value element)
    ---------------------------------------------------------- */
 function initCopyAddress() {
-  const btn = document.getElementById('copyCaBtn');
-  const value = document.getElementById('caValue');
-  if (!btn || !value) return;
+  document.querySelectorAll('.hero-ca-copy').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const row = btn.closest('.hero-ca-row');
+      const value = row ? row.querySelector('.hero-ca-value') : null;
+      if (!value) return;
 
-  btn.addEventListener('click', () => {
-    navigator.clipboard.writeText(value.textContent.trim()).then(() => {
-      const original = btn.textContent;
-      btn.textContent = 'Copied!';
-      btn.classList.add('copied');
-      setTimeout(() => {
-        btn.textContent = original;
-        btn.classList.remove('copied');
-      }, 1800);
-    }).catch(() => {
-      console.warn('Clipboard copy failed.');
+      navigator.clipboard.writeText(value.textContent.trim()).then(() => {
+        const original = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.classList.remove('copied');
+        }, 1800);
+      }).catch(() => {
+        console.warn('Clipboard copy failed.');
+      });
     });
   });
 }
